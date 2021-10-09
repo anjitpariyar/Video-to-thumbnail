@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thumbnail</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="video-demo-container" class="video-demo-container">
+      <section>
+        <input type="file" id="file-input" accept="video/mp4" />
+      </section>
+      <section class="video-wrapper">
+        <video id="video-element">
+          <source type="video/mp4" />
+        </video>
+        <caption>
+          Here's video
+        </caption>
+        <!-- selection video time is only tiggering element -->
+        <div id="thumbnail-container">
+          Select time period to create thumbnail
+          <select id="set-video-seconds"></select>
+        </div>
+        <img
+          id="download-link"
+          src=""
+          alt="Here's video Thumbnail"
+          title="Here's video Thumbnail"
+        />
+      </section>
+      <canvas id="canvas-element"></canvas>
+    </main>
+    <script src="./video.js"></script>
+  </body>
+</html>

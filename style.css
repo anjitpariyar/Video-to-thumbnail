@@ -1,0 +1,33 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.video-demo-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 2em;
+  overflow: hidden;
+}
+.video-wrapper {
+  margin: 1em 0;
+}
+video {
+  max-width: 500px;
+  width: 100%;
+  max-height: 500px;
+}
+
+img {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  max-height: 400px;
+  width: auto;
+}
+canvas {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
